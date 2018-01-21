@@ -18,10 +18,6 @@ bitsyntax@~0.0.4:
   dependencies:
     buffer-more-ints "0.0.2"
 
-blocked@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/blocked/-/blocked-1.2.1.tgz#e22efe767863c65ab8197f6252929104e1ec9ce2"
-
 bluebird@^3.4.6:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.1.tgz#d9551f9de98f1fcda1e683d17ee91a0602ee2eb9"
@@ -47,10 +43,9 @@ isarray@0.0.1:
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
 
 raincache@DasWolke/RainCache#dev:
-  version "0.3.3"
-  resolved "https://codeload.github.com/DasWolke/RainCache/tar.gz/ac5ee630c9030b44b25b96134a58c6ac23f775c3"
+  version "0.3.4"
+  resolved "https://codeload.github.com/DasWolke/RainCache/tar.gz/7d48b2240cbadb4e3c590f9a624ecf49bbe3ecef"
   dependencies:
-    blocked "^1.2.1"
     tsubaki "^1.2.0"
   optionalDependencies:
     amqplib "^0.5.2"
