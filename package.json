@@ -1,0 +1,14 @@
+{
+  "name": "RainGate",
+  "version": "0.1.0",
+  "description": "Ready to use cache worker for a discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wolke <wolke@weeb.sh>",
+  "license": "MIT",
+  "dependencies": {
+    "raincache": "DasWolke/RainCache#dev"
+  }
+}

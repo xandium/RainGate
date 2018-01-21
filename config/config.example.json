@@ -1,0 +1,9 @@
+{
+  "redis":{
+    "host":"localhost",
+    "password":""
+  },
+  "amqp":{
+    "amqpUrl":"optional if you don't want to use defaults"
+  }
+}
