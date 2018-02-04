@@ -1,16 +1,22 @@
-const config = require('./config/config');
-let RainCache = require('raincache');
-let AmqpConnector = require('raincache').Connectors.AmqpConnector;
-let Redis = require('raincache').Engines.RedisStorageEngine;
-let con = new AmqpConnector(config.amqp);
-let cache = new RainCache({storage: {default: new Redis(config.redis)}, debug: false}, con, con);
-let init = async () => {
-    await cache.initialize();
-};
-cache.on('debug', (data) => {
-    console.log(data);
-});
-init().then(async () => {
-    console.log('Initialized successfully');
+const config = require('./config/config')
+const RainCache = require('raincache')
+const AmqpConnector = require('./DetailedAmqpConnector')
+const Redis = require('raincache').Engines.RedisStorageEngine
+let StatsD
+let statsClient
+try {
+  StatsD = require('hot-shots')
+} catch (e) {
 
-}).catch(e => console.error(e));
+}
+if (StatsD && config.statsD && config.statsD.enabled) {
+  statsClient = new StatsD(config.statsD)
+}
+const con = new AmqpConnector(config.amqp, statsClient)
+const cache = new RainCache({storage: {default: new Redis(config.redis)}, debug: false}, con, con)
+const init = async () => {
+  await cache.initialize()
+}
+init().then(async () => {
+  console.log('Initialized successfully')
+}).catch(e => console.error(e))
