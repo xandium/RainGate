@@ -13,7 +13,7 @@ class DetailedAmqpConnector extends AmqpConnector {
   }
 
   recordEvent (type, event) {
-    this.statsClient.increment(`discordevent`, 1, 1, [`shard:${event.shard_id}`, `event:${event.t}`], (err) => {
+    this.statsClient.increment(`discordevent-${type}`, 1, 1, [`shard:${event.shard_id}`, `event:${event.t}`], (err) => {
       if (err) {
         console.log(err)
       }
