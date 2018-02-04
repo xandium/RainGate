@@ -35,7 +35,6 @@ class DetailedAmqpConnector extends AmqpConnector {
     }
     return super.send(event)
   }
-
 }
 
 module.exports = DetailedAmqpConnector
