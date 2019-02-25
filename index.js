@@ -13,7 +13,7 @@ if (StatsD && config.statsD && config.statsD.enabled) {
   statsClient = new StatsD(config.statsD)
 }
 const con = new AmqpConnector(config.amqp, statsClient)
-const cache = new RainCache({storage: {default: new Redis(config.redis)}, debug: false}, con, con)
+const cache = new RainCache({ storage: { default: new Redis(config.redis) }, debug: false }, con, con)
 const init = async () => {
   await cache.initialize()
 }
