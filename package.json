@@ -1,5 +1,5 @@
 {
-  "name": "RainGate",
+  "name": "@xandium/raingate",
   "version": "0.1.0",
   "description": "Ready to use cache worker for a discord bot",
   "main": "index.js",
@@ -12,7 +12,8 @@
   "author": "wolke <wolke@weeb.sh>",
   "license": "MIT",
   "dependencies": {
-    "raincache": "^0.4.1"
+    "@xandium/raincache": "^0.4.1",
+    "@xandium/stargear": "^0.2.0"
   },
   "devDependencies": {
     "eslint": "^5.13.0",

@@ -1,17 +1,17 @@
 {
-  "redis":{
-    "host":"localhost",
-    "password":""
+  "redis": {
+    "host": "localhost",
+    "password": ""
   },
-  "amqp":{
-    "amqpUrl":"optional if you don't want to use defaults",
-    "amqpQueue":"demo-pre-cache",
-    "sendQueue":"demo-post-cache"
+  "amqp": {
+    "amqpUrl": "optional if you don't want to use defaults",
+    "amqpQueue": "demo-pre-cache",
+    "sendQueue": "demo-post-cache"
   },
-  "statsD":{
-    "enabled":false,
-    "host":"HOST",
-    "port":8125,
-    "prefix":"raingate."
+  "statsD": {
+    "enabled": false,
+    "host": "HOST",
+    "port": 8125,
+    "prefix": "raingate."
   }
 }
