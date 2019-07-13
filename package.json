@@ -10,10 +10,13 @@
     "lint:fix": "eslint . --fix"
   },
   "author": "wolke <wolke@weeb.sh>",
+  "contributors": [
+    "Sharon Williams <swilliams@xandium.io> (https://xandium.io)"
+  ],
   "license": "MIT",
   "dependencies": {
-    "@xandium/raincache": "^0.4.1",
-    "@xandium/stargear": "^0.2.0"
+    "@xandium/raincache": "git+ssh://git@github.com/xandium/raincache",
+    "@xandium/stargear": "git+ssh://git@github.com/xandium/stargear"
   },
   "devDependencies": {
     "eslint": "^5.13.0",
