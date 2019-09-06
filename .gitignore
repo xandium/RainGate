@@ -3,3 +3,4 @@ config/config.json
 .idea
 yuudachi-cache.iml
 RainGate.iml
+package-lock.json
