@@ -15,8 +15,8 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@xandium/raincache": "git+ssh://git@github.com/xandium/raincache",
-    "@xandium/stargear": "git+ssh://git@github.com/xandium/stargear"
+    "@xandium/raincache": "git+https://git@github.com/xandium/raincache",
+    "@xandium/stargear": "git+https://git@github.com/xandium/stargear"
   },
   "devDependencies": {
     "eslint": "^5.13.0",
